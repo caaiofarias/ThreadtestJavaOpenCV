@@ -10,7 +10,7 @@ public class Producer implements Runnable {
 	private CircularBuffer<Frame> buffer = new CircularBuffer<Frame>(100);
 	protected static Logger logger = Logger.getLogger("aa.central");
 	int maxSize;
-	String SOURCE_RTSP = "rtsp://admin:12345@10.81.18.50/live4.sdp";
+	String SOURCE_RTSP = "rtsp://freja.hiof.no:1935/rtplive/definst/hessdalen03.stream";
 
 	public Producer(CircularBuffer<Frame> buffer, int size) {
 		this.buffer = buffer;
